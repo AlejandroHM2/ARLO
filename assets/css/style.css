@@ -168,23 +168,6 @@ a {
     height: auto;
 }
 
-/* Mobile About*/
-
-.image-desktop {
-    display: none;
-}
-
-/* Tablet About */
-
-@media all and (min-width: 600px) {
-    .image-desktop {
-        display: block;
-    }
-    .image-mobile {
-        display: none;
-    }
-}
-
 /* Mobile Form */
 
 footer {
@@ -232,7 +215,7 @@ footer {
     color: var(--color-second);
 }
 
-.btn-primary{
+.btn-primary {
     border: 1px solid var(--color-second);
     border-radius: 5px;
     background-color: #fff;
@@ -257,4 +240,3 @@ footer {
         font-size: 16px;
     }
 }
-
