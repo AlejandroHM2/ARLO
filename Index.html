@@ -6,103 +6,76 @@
     <title>A R L O</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="assets/css/global.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/8f56876285.js" crossorigin="anonymous"></script>
     <script src="assets/js/global.js"></script>
 
 </head>
 
 <body>
-
-    <header id="header">
-        <a class="menu" onclick="openMenu()">
-            <svg fill-rule="evenodd" width="100%" height="100%" viewBox="0 0 24 24" fit="" preserveAspectRatio="xMidYMid meet" focusable="false">
-                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
-            </svg>
-        </a>
-        <a class="logo-link-menu" href="Index.html" onclick="closeMenu()">
-            <img alt="Logo" src="images/logo-menu-light.svg" width="200" height="100%">
-        </a>
+    <header>
+        <nav id="navmenu" class="menu">
+            <a class="logo" href="#Home">
+                <img class="imglogo" alt="Logo" src="images/logo-menu-light.svg">
+            </a>
+            <a class="item" href="#About" onclick="menuClick()"><i class="fas fa-user-friends"></i> NOSOTROS</span></a>
+            <a class="item" href="#Services" onclick="menuClick()"><i class="fas fa-clipboard-check"></i> SERVICIOS</span></a>
+            <a class="item" href="#Clients" onclick="menuClick()"><i class="fas fa-hands-helping"></i> CLIENTES</span></a>
+            <a class="item" href="#Contact" onclick="menuClick()"><i class="fas fa-envelope-open"></i></i> CONTACTO</a>
+            <a class="toggle" href="javascript:void(0);" onclick="menuClick()" href="#"><i class="fas fa-bars"></i></a>
+        </nav>
     </header>
 
-    <nav id="menu">
-        <div class="shadow" onclick="closeMenu()"></div>
-        <div class="menu-container">
-            <a href="Index.html" onclick="closeMenu()">
-                <img width="100%" height="100%" alt="Logo" src="images/logo-menu-light.svg">
-            </a>
-            <a href="#nosotros" onclick="closeMenu()">
-                <img class="logo-services" src="images/nosotros.png">
-                <span class="menu-texto">Nosotros</span>
-            </a>
-            <a href="#servicios" onclick="closeMenu()">
-                <img class="logo-services" src="images/servicios.png">
-                <span class="menu-texto">Servicios</span>
-            </a>
-            <a href="#clientes" onclick="closeMenu()">
-                <img class="logo-services" src="images/clientes.png">
-                <span class="menu-texto">Clientes</span>
-            </a>
-            <a href="#contacto" onclick="closeMenu()">
-                <img class="logo-services" src="images/contacto.png">
-                <span class="menu-texto">Contacto</span>
-            </a>
+    <!-- Principal -->
+    <div id="Home">
+        <img src="images/home.svg" width="100%" height="auto" alt="Home">
+    </div>
+    <!-- Nosotros -->
+    <div id="About">
+        <div class="flex-center pleca">
+            <b>NOSOTROS</b>
+        </div> 
+        <img class="image-desktop" src="images/nosotros.svg" width="100%" height="auto" alt="Home">
+        <img class="image-mobile" src="images/nosotros-mobile.png" width="100%" height="auto" alt="Home">
+    </div>
+    <!-- Servicios -->
+    <div id="Services">
+        <div class="flex-center pleca">
+            <b>SERVICIOS</b>
+        </div> 
+    </div>
+    <!-- Clientes -->
+    <div class="pb-20" id="Clients">
+        <div class="flex-center pleca">
+            <b>CLIENTES</b>
+        </div> 
+    </div>
+
+    <!-- Pie de página -->
+    <footer id="Contact">
+        <div class="flex-center pb-20">
+            <b>¡TE COTIZAMOS SIN COSTO!</b>
         </div>
-    </nav>
+        <form>
+            <div class="form-group pb-20">
+                <label><span class="red-color">* </span>Nombre:</label>
+                <input type="text" placeholder="Escribe tu nombre">
+            </div>
+            <div class="form-group pb-20">
+                <label><span class="red-color">* </span>Direcci&oacute;n de email:</label>
+                <input type="email" placeholder="Escribe tu email">
+            </div>
+            <div class="form-group pb-20">
+                <label><span class="red-color">* </span>Mensaje:</label>
+                <textarea rows="4" cols="50" placeholder="Escribe un mensaje:"></textarea>
+            </div>
+            <div class="flex-center pb-20">
+                <input class="btn-primary" type="submit" value="Enviar" />
+            </div>
+        </form>
+    </footer>
 
-    <section id="home">
-        <a href="#nosotros" class="more">Learn More</a>
-    </section>
-
-    <section id="nosotros" class="wrapper post">
-        <a href="#servicios" class="more">Learn More</a>
-    </section>
-
-    <section id="servicios" style="background-attachment: fixed; min-height: 100vh; height: 100vh;">
-        <article class="traditional group_post"></article>
-        <article class="digital group_post"></article>
-        <article class="corporativa group_post"></article>
-        <article class="industria group_post"></article>
-        <article class="promocionales group_post">
-            <a href="#clientes" class="more">Learn More</a>
-        </article>
-    </section>
-
-    <!--
-    <section id="servicios" style="background-attachment: fixed; min-height: 100vh; height: 100vh;">
-        <img class="traditional group_post"></article>
-        <img class="digital group_post"></article>
-        <img class="corporativa group_post"></article>
-        <img class="industria group_post"></article>
-        <img class="promocionales group_post">
-        <a href="#clientes" class="more">Learn More</a>
-        </img>
-    </section>
-
-
-    
-    
-
-    <section id="clientes" class="wrapper post">
-    </section>
-    
-    <section id="contacto">
-        <span style="top: 48px;">Contacto</span>
-    </section>
-
-    
-    <aside>
-        Aside
-    </aside>
-    <section>
-        <article>
-            Article
-        </article>
-    </section>
-
-
-    <footer>
-        Footer
-    </footer> -->
 </body>
 
 </html>
