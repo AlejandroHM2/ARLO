@@ -117,6 +117,10 @@ div {
     align-items: center;
 }
 
+input[type="file"] {
+    display: none;
+}
+
 
 /* Tablet menu */
 
@@ -213,6 +217,8 @@ footer {
     background-color: #fff;
     padding: 5px 30px;
     font-size: 12px;
+    width: 100%;
+    text-align: center;
 }
 
 
